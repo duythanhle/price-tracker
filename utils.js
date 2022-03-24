@@ -29,7 +29,6 @@ const selectors = {
 }
 
 const getProductDetails = async(url, merchant) => {
-    console.log(url);
     try{
         const res = await axios.get(`${WORKER_URL}/?url=${encodeURIComponent(url)}`, {
             headers: {
